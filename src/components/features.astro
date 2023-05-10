@@ -13,11 +13,16 @@ const features: Array<FeatureItem> = [
 ];
 ---
 
+<style>
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+</style>
+
 <ContentSection title="What we can do?" id="features">
   <Fragment slot="lead">
     <iframe
-      width="560"
-      height="315"
       src="https://www.youtube.com/embed/USmu0scNcSs"
       title="YouTube video player"
       frameborder="0"
