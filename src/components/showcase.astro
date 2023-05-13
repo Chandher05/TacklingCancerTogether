@@ -6,21 +6,15 @@ import { getShowcase } from "~/data/showcase";
 const sites = await getShowcase();
 ---
 
-<ContentSection title="Showcase" id="showcase">
-  <Fragment slot="lead">
-    TCT is <span class="text-primary"></span>.{" "}
-    <span class="text-primary"></span>
-    {" "}
-    <span class="text-primary"></span>.
-  </Fragment>
-  <div class="max-w-6xl space-y-2">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {sites.map((site) => <ShowcaseCard site={site} />)}
-    </div>
-    <p class="text-right text-sm">
-      <a class="text-primary" href="https://astro.build/showcase/">
-        ...and more &rarr;
-      </a>
-    </p>
+<ContentSection title="Registration" id="Registration">
+  <div class="h-100 h-full max-w-6xl space-y-2">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLScxctJEyUZsuBpfXiK3ctW-ilDDp8XJss65HiEQVMeX4gIMJA/viewform?embedded=true"
+      width="640"
+      height="1024"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0">Loading…</iframe
+    >
   </div>
 </ContentSection>
