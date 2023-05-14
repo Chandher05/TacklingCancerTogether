@@ -6,11 +6,17 @@ import { getShowcase } from "~/data/showcase";
 const sites = await getShowcase();
 ---
 
+<style>
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+</style>
+
 <ContentSection title="Registration" id="Registration">
   <div class="h-100 h-full max-w-6xl space-y-2">
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLScxctJEyUZsuBpfXiK3ctW-ilDDp8XJss65HiEQVMeX4gIMJA/viewform?embedded=true"
-      width="640"
       height="1024"
       frameborder="0"
       marginheight="0"
